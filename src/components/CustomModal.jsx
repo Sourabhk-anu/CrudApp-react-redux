@@ -13,6 +13,9 @@ const CustomModal = ({id, showPopup, setShowPopup}) => {
         <div className="modalContainer">
             <button onClick={() => setShowPopup(false)}>Close</button>
             <h2>{singleUsers[0].name}</h2>
+            <h2>{singleUsers[0].email}</h2>
+            <h2>Age:{singleUsers[0].age}</h2>
+            <h2>{singleUsers[0].gender}</h2>
         </div>
     </div>
   )

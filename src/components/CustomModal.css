@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    opacity: 0.8;
+    opacity: 0.9;
   }
   
   .modalContainer {
@@ -18,5 +18,5 @@
     padding: 10px;
     border-radius: 10px;
     height: 300px;
-    width: 300px;
+    width: 400px;
   }
