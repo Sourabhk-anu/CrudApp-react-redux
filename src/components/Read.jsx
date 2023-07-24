@@ -17,7 +17,7 @@ const Read = () => {
 
   useEffect(() => {
     dispatch(showUser());
-  }, []);
+  }, [dispatch]);
 
   if (loading) {
     return <h2>Loading</h2>;
@@ -34,31 +34,31 @@ const Read = () => {
       )}
       <h2>All data</h2>
       <input
-        class="form-check-input"
+        className="form-check-input"
         name="gender"
         checked={radioData === ""}
         type="radio"
         onChange={(e) => setRadioData("")}
       />
-      <label class="form-check-label">All</label>
+      <label className="form-check-label">All</label>
       <input
-        class="form-check-input"
+        className="form-check-input"
         name="gender"
         checked={radioData === "Male"}
         value="Male"
         type="radio"
         onChange={(e) => setRadioData(e.target.value)}
       />
-      <label class="form-check-label">Male</label>
+      <label className="form-check-label">Male</label>
       <input
-        class="form-check-input"
+        className="form-check-input"
         name="gender"
         value="Female"
         checked={radioData === "Female"}
         type="radio"
         onChange={(e) => setRadioData(e.target.value)}
       />
-      <label class="form-check-label">Female</label>
+      <label className="form-check-label">Female</label>
 
       <div>
         {users &&
